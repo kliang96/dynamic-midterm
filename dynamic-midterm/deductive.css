@@ -1,0 +1,17 @@
+.deductive_body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.deductive_header{
+
+}
+
+.deductive_bottom{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
