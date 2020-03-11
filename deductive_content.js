@@ -1,29 +1,28 @@
 var data = {
-    qnum:0,
+    number:0,
     questions:[
         {
-            title: "What comes after A?",
-            answer: "B",
-            bgcolor: "yellow",
+            header: "Observation 1",
             img: "http://placekitten.com/100/100",
+            text: "Lorem ipsum 1",
         },
         {
-            title: "Is 5 bigger than 4?",
-            answer: "Yes",
-            bgcolor: "#ABC",
+            header: "Observation 2",
             img: "http://placekitten.com/200/200",
+            text: "Lorem ipsum 2",
         },
         {
-            title: "What is the color of a banana?",
-            answer: "Yellow",
-            bgcolor: "rgb(1,150,232)",
+            header: "Logical Conclusion",
             img: "http://placekitten.com/300/300",
+            text: "Lorem ipsum 3",
         },
-        {
-            title: "What is the meaning of life?",
-            answer: "idk",
-            bgcolor: "aquamarine",
-            img: "http://placekitten.com/400/400",
-        }
     ]
 }
+
+function NextPage(){
+    document.querySelector(".deductive_header").innerText = data.questions[data.number].header;
+    document.querySelector(".deductive_image").innerHTML = "<img src=" + data.questions[data.number].img + " />";
+    document.querySelector(".deductive_text").innerText = data.questions[data.number].text;
+}
+
+NextPage();
