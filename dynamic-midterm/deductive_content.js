@@ -18,3 +18,13 @@ var data = {
         },
     ]
 }
+
+function NextPage(){
+    document.querySelector(".deductive_header").innerText = data.questions[data.number].header;
+    document.querySelector(".deductive_image").innerHTML = "<img src='" + data.questions[data.number].img + " />";
+    document.querySelector(".deductive_text").innerText = data.questions[data.number].text;
+}
+
+
+
+NextPage();
