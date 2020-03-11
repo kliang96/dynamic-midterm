@@ -1,0 +1,25 @@
+html, body {
+    background-color: #ADD;
+    margin: 0; 
+}
+
+.header_title {
+    display: flex; 
+    align-items: center;    
+    justify-content: center;
+}
+
+.homepage_arrows {
+    display: flex;
+    justify-content: center;
+
+}
+
+.inductive, .deductive { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
