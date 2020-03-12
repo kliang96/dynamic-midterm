@@ -18,9 +18,10 @@ var data = {
     ]
 }
 
-var count=0;
+var count = 0;
+
 function NextPage() {
-    if (count > 2){
+    if (count > 2) {
         document.querySelector(".deductive_body").style.display = "none";
         document.querySelector(".deductive_result").style.display = "flex";
     } else {
@@ -33,5 +34,13 @@ function NextPage() {
     }
 }
 
-NextPage();
+function reset() {
+    data.number = 0;
+    count = 0;
+    document.querySelector(".deductive_body").style.display = "flex";
+    document.querySelector(".deductive_result").style.display = "none";
+    console.log(data.number);
+    NextPage();
+}
 
+NextPage();
