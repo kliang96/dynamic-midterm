@@ -16,13 +16,27 @@
     font-family: Burbank;
 }
 
+.deductive_image{
+    width:55vw;
+    height:25vw;
+    margin-bottom: 25px;
+    object-fit:cover;
+}
+
 .deductive_bottom{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    width:60vw;
+    display:flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.next_button{
+    width: 150px;
+    height: 50px;
+    background-color:green;
+    border-radius:5px;
 }
 
 .deductive_result{
     display: none;
 }
-
-  
