@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Burbank;
+    src: url(fonts/Burbank.ttf);
+}
+
 html, body {
     background-color: #ADD;
     margin: 0; 
@@ -7,19 +12,58 @@ html, body {
     display: flex; 
     align-items: center;    
     justify-content: center;
+    font-family: Burbank; 
 }
 
 .homepage_arrows {
     display: flex;
     justify-content: center;
+}
 
+
+.uparrow_image, .downarrow_image {
+    width: 300px; 
+    animation-play-state: paused; 
+}
+
+.uparrow_image:hover {
+    animation: bounce 0.4s infinite;
+    animation-play-state: running; 
+}
+.downarrow_image:hover {
+    animation: bounce 0.4s infinite;
+    animation-play-state: running; 
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    25% {transform: translateY(-25px);}
+    50% {transform: translateY(-50px);}
+    75% {transform: translateY(-25px);}
+    100% {transform: translateY( 0px);}
 }
 
 .inductive, .deductive { 
+    font-family: Burbank;
     display: flex; 
     flex-direction: column; 
     align-items: center;
     justify-content: center;
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 50px;
+}
+
+.quiz_button {
+    font-family: Burbank; 
+    width: 150px; 
+    height: 50px;
+    font-size: 20px;
+}
+
+.quiz {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
 }
