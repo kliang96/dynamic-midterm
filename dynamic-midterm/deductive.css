@@ -1,4 +1,9 @@
-.deductive_body{
+@font-face {
+    font-family: Burbank;
+    src: url(fonts/Burbank.ttf);
+  }
+  
+  .deductive_body{
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -8,7 +13,7 @@
 }
 
 .deductive_header{
-
+    font-family: Burbank;
 }
 
 .deductive_bottom{
@@ -19,3 +24,5 @@
 .deductive_result{
     display: none;
 }
+
+  
