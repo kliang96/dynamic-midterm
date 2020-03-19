@@ -1,41 +1,51 @@
 @font-face {
-    font-family: Burbank;
-    src: url(fonts/Burbank.ttf);
-  }
-  
-  h1 {
-    font-family: Burbank;
-  }
-  
-  .inductive_result {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .buttons {
-    display: flex;
-    margin-top: 5px;;
-  }
-  
-  button {
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    display: flex;
-  }
-  
-  .back_to_top {
-    background-color: lightgrey;
-  }
-  
-  .learn_about_etc {
-    background-color: lightgrey;
-  }
-  
-  .take_quiz {
-    background-color: green;
-  }
+  font-family: Burbank;
+  src: url(fonts/Burbank.ttf);
+}
+
+h1 {
+  font-family: Burbank;
+  font-size: 48pt;
+}
+
+.inductive_result {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inductive_obser {
+  font-size: 24pt;
+}
+
+.buttons {
+  display: flex;
+  margin-top: 5px;
+
+}
+
+button {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  font-family: Burbank;
+  font-size:14pt;
+  justify-content: center;
+  align-items: center;
+}
+
+.back_to_top {
+  background-color: lightgrey;
+}
+
+.learn_about_etc {
+  background-color: lightgrey;
+}
+
+.take_quiz {
+  background-color: green;
+}

@@ -26,7 +26,7 @@ function NextPage() {
         document.querySelector(".inductive_result").style.display = "flex";
     } else {
         document.querySelector(".inductive_header").innerText = data.questions[data.number].header;
-        document.querySelector(".inductive_image").innerHTML = `<img src= ${data.questions[data.number].img} />`;
+        document.querySelector(".inductive_image").innerHTML = "<img src= " + data.questions[data.number].img + "/>";
         document.querySelector(".inductive_text").innerText = data.questions[data.number].text;
         data.number++;
         count++;
