@@ -1,19 +1,19 @@
 var data = {
     number: 0,
     questions: [{
-            header: "Observation 1",
+            header: "Deductive Observation 1",
             img: "http://placekitten.com/100/100",
-            text: "I play fortnite",
+            text: "Looks like there are buildings here",
         },
         {
-            header: "Observation 2",
+            header: "Deductive Observation 2",
             img: "http://placekitten.com/200/200",
-            text: "Everyone I play Fortnite with plays on PS4",
+            text: "Only players can build in fortnite",
         },
         {
-            header: "Logical Conclusion",
+            header: "Deductive Logical Conclusion",
             img: "http://placekitten.com/300/300",
-            text: "Therefore, Fortnite must only be available on PS4"
+            text: "Therefore, players must have been here."
         },
     ]
 }
