@@ -12,7 +12,7 @@
     flex-direction: column;
 }
 
-h1{
+body{
     font-family: Burbank;
 }
 
@@ -29,6 +29,7 @@ h1{
     align-items: center;
     flex-direction: row;
     position:relative;
+    font-size:32pt;
 }
 
 .next_button{
@@ -38,6 +39,8 @@ h1{
     background-color:green;
     border-radius:5px;
     right:0;
+    font-family: Burbank;
+    font-size: 24pt;
 }
 
 .inductive_result{

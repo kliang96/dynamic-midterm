@@ -3,17 +3,17 @@ var data = {
     questions: [{
             header: "Observation 1",
             img: "http://placekitten.com/100/100",
-            text: "Lorem ipsum 1",
+            text: "I play fortnite",
         },
         {
             header: "Observation 2",
             img: "http://placekitten.com/200/200",
-            text: "Lorem ipsum 2",
+            text: "Everyone I play Fortnite with plays on PS4",
         },
         {
             header: "Logical Conclusion",
             img: "http://placekitten.com/300/300",
-            text: "Lorem ipsum 3",
+            text: "Therefore, Fortnite must only be available on PS4"
         },
     ]
 }

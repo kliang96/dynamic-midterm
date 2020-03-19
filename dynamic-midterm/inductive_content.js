@@ -1,19 +1,19 @@
 var data = {
     number: 0,
     questions: [{
-            header: "Observation 1",
-            img: "http://placekitten.com/100/100",
-            text: "Lorem ipsum 1",
+            header: "Inductive Observation 1",
+            img: "img/johnwick.gif",
+            text: "I play fortnite",
         },
         {
-            header: "Observation 2",
-            img: "http://placekitten.com/200/200",
-            text: "Lorem ipsum 2",
+            header: "Inductive Observation 2",
+            img: "ps4.jpg",
+            text: "Everyone I play Fortnite with plays on PS4",
         },
         {
-            header: "Logical Conclusion",
-            img: "http://placekitten.com/300/300",
-            text: "Lorem ipsum 3",
+            header: "Inductive Logical Conclusion",
+            img: "fortnitePS4.jpeg",
+            text: "Therefore, Fortnite must only be available on PS4",
         },
     ]
 }
@@ -26,7 +26,7 @@ function NextPage() {
         document.querySelector(".inductive_result").style.display = "flex";
     } else {
         document.querySelector(".inductive_header").innerText = data.questions[data.number].header;
-        document.querySelector(".inductive_image").innerHTML = "<img src= " + data.questions[data.number].img + " />";
+        document.querySelector(".inductive_image").innerHTML = `<img src= ${data.questions[data.number].img} />`;
         document.querySelector(".inductive_text").innerText = data.questions[data.number].text;
         data.number++;
         count++;
