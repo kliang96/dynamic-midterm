@@ -20,7 +20,7 @@
     width:55vw;
     height:25vw;
     margin-bottom: 25px;
-    object-fit:cover;
+    object-fit:contain;
 }
 
 .deductive_bottom{

@@ -2,17 +2,17 @@ var data = {
     number: 0,
     questions: [{
             header: "Deductive Observation 1",
-            img: "http://placekitten.com/100/100",
+            img: "img/buildings.jpg",
             text: "Looks like there are buildings here",
         },
         {
             header: "Deductive Observation 2",
-            img: "http://placekitten.com/200/200",
+            img: "img/player-building.jpg",
             text: "Only players can build in fortnite",
         },
         {
             header: "Deductive Logical Conclusion",
-            img: "http://placekitten.com/300/300",
+            img: "img/player.jpg",
             text: "Therefore, players must have been here."
         },
     ]
@@ -26,7 +26,7 @@ function NextPage() {
         document.querySelector(".deductive_result").style.display = "flex";
     } else {
         document.querySelector(".deductive_header").innerText = data.questions[data.number].header;
-        document.querySelector(".deductive_image").innerHTML = "<img src= " + data.questions[data.number].img + " />";
+        document.querySelector(".deductive_image").src = data.questions[data.number].img;
         document.querySelector(".deductive_text").innerText = data.questions[data.number].text;
         data.number++;
         count++;
