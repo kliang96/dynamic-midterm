@@ -16,13 +16,20 @@ h1 {
     font-size: 18pt;
 }
 
+.quiz_main{
+    width:100vw;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+}
+
 .quiz_tutorial {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width:100vw;
+    height:100vh;
 }
 
 button {
@@ -35,6 +42,7 @@ button {
     justify-content: center;
     align-items: center;
     background-color: lightgrey;
+    margin:10px;
 }
 
 button:hover {
@@ -43,9 +51,38 @@ button:hover {
 }
 
 .quiz_question {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
 }
 
 .quiz_answer {
     display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100vw;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+}
+
+.quiz_progress{
+    width:98vw;
+    height: 2.5vw;
+    background-color:lightgray;
+    display:flex;
+    position: relative;
+    top:-5.5vw;
+    border-radius:10px;
+}
+
+.quiz_progress_percent{
+    height: 2.5vw;
+    width:0vw;
+    background-color:cornflowerblue;
+    border-radius:10px;
 }
