@@ -1,38 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="quiz.css">
     <title>Take the Quiz!</title>
 </head>
+
 <body>
     <div class="quiz_main">
-        
+
         <!-- first screen begins here -->
-        <div class="quiz_start">
-
-
+        <div class="quiz_tutorial">
+            <h1> How it works</h1>
+            <div class="quiz_explanation">
+                -There are 5 scenarios </br>
+                -You will click through and read each </br>
+                -At the end of each scenrio you have to choose whether it's Inductive or Deductive reasoning </br>
+                -If you get all five correct you get candy!!!! </br> </br>
+                <div class="italic_explanation">Note below is a progress bar which shows you your progress</div>
+            </div>
         </div>
 
         <!-- question screen begins here -->
         <div class="quiz_question">
-
-
+            <div class="quiz_question_number">question number</div>
+            <div class="quiz_question_picture">picture</div>
+            <div class="quiz_question_question">question</div>
+            <button>Next</button>
         </div>
 
         <!-- answer screen begins here -->
         <div class="quiz_answer">
-
-
+            <div>Was this Inductive or Deductive reasoning?</div>
+            <button class="">Deductive</button>
+            <button class="">Inductive</button>
+            <button class="">Back</button>
         </div>
 
         <!-- progress bar for the quiz begins here -->
         <div class="quiz_progress">
-
-
+            <div class="quiz_progress_percent"></div>
         </div>
-
     </div>
 </body>
+
 </html>

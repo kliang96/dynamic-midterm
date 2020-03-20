@@ -1,9 +1,9 @@
 @font-face {
     font-family: Burbank;
     src: url(fonts/Burbank.ttf);
-  }
-  
-  .inductive_body{
+}
+
+.inductive_body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -12,37 +12,37 @@
     flex-direction: column;
 }
 
-body{
+body {
     font-family: Burbank;
 }
 
-.inductive_image{
-    width:55vw;
-    height:25vw;
+.inductive_image {
+    width: 55vw;
+    height: 25vw;
     margin-bottom: 25px;
-    object-fit:contain;
+    object-fit: contain;
 }
 
-.inductive_bottom{
-    width:60vw;
-    display:flex;
+.inductive_bottom {
+    width: 60vw;
+    display: flex;
     align-items: center;
     flex-direction: row;
-    position:relative;
-    font-size:32pt;
+    position: relative;
+    font-size: 32pt;
 }
 
-.next_button{
-    position:absolute;
+.next_button {
+    position: absolute;
     width: 150px;
     height: 50px;
-    background-color:green;
-    border-radius:5px;
-    right:0;
+    background-color: green;
+    border-radius: 5px;
+    right: 0;
     font-family: Burbank;
     font-size: 24pt;
 }
 
-.inductive_result{
+.inductive_result {
     display: none;
 }

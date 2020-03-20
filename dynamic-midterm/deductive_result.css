@@ -23,7 +23,8 @@ h1 {
 
 .buttons {
   display: flex;
-  margin-top: 5px;;
+  margin-top: 5px;
+  ;
 }
 
 button {
@@ -32,7 +33,7 @@ button {
   border-radius: 5px;
   display: flex;
   font-family: Burbank;
-  font-size:14pt;
+  font-size: 14pt;
   justify-content: center;
   align-items: center;
 }

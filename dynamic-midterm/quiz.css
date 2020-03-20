@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Burbank;
+    src: url(fonts/Burbank.ttf);
+}
+
+body{
+    font-family:Burbank;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    font-family: Burbank;
+    font-size: 14pt;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+}
