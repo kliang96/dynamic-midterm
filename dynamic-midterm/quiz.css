@@ -3,8 +3,26 @@
     src: url(fonts/Burbank.ttf);
 }
 
-body{
-    font-family:Burbank;
+body {
+    font-family: Burbank;
+    font-size: 24pt;
+}
+
+h1 {
+    font-size: 48pt;
+}
+
+.note {
+    font-size: 18pt;
+}
+
+.quiz_tutorial {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 button {
@@ -17,4 +35,17 @@ button {
     justify-content: center;
     align-items: center;
     background-color: lightgrey;
+}
+
+button:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.quiz_question {
+    display: none;
+}
+
+.quiz_answer {
+    display: none;
 }

@@ -36,14 +36,13 @@ button {
   font-size: 14pt;
   justify-content: center;
   align-items: center;
+  background-color: lightgrey;
+  margin:10px;
 }
 
-.back_to_top {
-  background-color: lightgrey;
-}
-
-.learn_about_etc {
-  background-color: lightgrey;
+button:hover {
+  background-color: darkgrey;
+  cursor: pointer;
 }
 
 .take_quiz {

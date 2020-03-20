@@ -24,7 +24,6 @@ h1 {
 .buttons {
   display: flex;
   margin-top: 5px;
-
 }
 
 button {
@@ -37,6 +36,12 @@ button {
   justify-content: center;
   align-items: center;
   background-color: lightgrey;
+  margin:10px;
+}
+
+button:hover {
+  background-color: darkgrey;
+  cursor: pointer;
 }
 
 .take_quiz {

@@ -43,6 +43,11 @@ body {
     font-size: 24pt;
 }
 
+.next_button:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
 .deductive_result {
     display: none;
 }
