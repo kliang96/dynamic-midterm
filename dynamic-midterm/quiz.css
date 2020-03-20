@@ -51,7 +51,7 @@ button:hover {
 }
 
 .quiz_question {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -75,6 +75,47 @@ button:hover {
     height: 100vh;
     margin: 0px;
     padding: 0px;
+}
+
+.quiz_answer button {
+    height: 100px;
+    width: 300px;
+    font-size: 32pt;
+}
+
+.quiz_answer button {
+    height: 100px;
+    width: 300px;
+    font-size: 32pt;
+}
+
+.right {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.answer_picture {
+    width: 55vw;
+    height: 20vw;
+    margin-bottom: 25px;
+    object-fit: contain;
 }
 
 .quiz_progress {
