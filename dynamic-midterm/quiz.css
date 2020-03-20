@@ -24,7 +24,7 @@ h1 {
 }
 
 .quiz_tutorial {
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -101,7 +101,7 @@ button:hover {
 }
 
 .wrong {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     flex-direction: column;
