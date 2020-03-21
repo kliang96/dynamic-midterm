@@ -97,64 +97,38 @@ function getStarted() {
 
 }
 
-function next1() {
-    document.querySelector(".quiz_question").style.display = "flex";
-    document.querySelector(".quiz_answer").style.display = "none";
-    // next();
-}
-
 var counter = 0;
-var aswr;
 
 function next() {
-
     console.log(data.number, "data.number");
     if (counter <= 2) {
         question1();
     }
-    if (counter >= 3 && counter <= 5) {
-        if (data.number == 3) {
+    if (counter >= 3 && counter < 5) {
+        if (counter % 3 == 0) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
-        
-
         }
         question2();
     }
-    if (counter >= 6 && counter <= 8) {
-        if (data.number == 3) {
+    if (counter >= 6 && counter < 8) {
+        if (counter % 3 == 0) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question3();
     }
-    if (counter >= 9 && counter <= 11) {
-        if (data.number == 3) {
+    if (counter >= 9 && counter < 11) {
+        if (counter % 3 == 0) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question4();
     }
-    if (counter >= 12 && counter <= 14) {
-        if (data.number == 3) {
+    if (counter >= 12 && counter < 14) {
+        if (counter % 3 == 0) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question5();
-
     }
-    if (counter == 15) {
-        document.querySelector(".quiz_question").style.display = "none";
-        document.querySelector(".quiz_answer").style.display = "flex";
-    }
-
-    console.log(counter, "counter");
     counter++;
-    data.number++;
 }
 
 
@@ -164,7 +138,7 @@ function question1() {
     document.querySelector(".quiz_question_number").innerHTML = data.question1[data.number].questionNo;
     document.querySelector(".quiz_question_question").innerHTML = data.question1[data.number].question;
     document.querySelector(".quiz_question_number").src = data.question1[data.number].img;
-    // data.number++;
+    data.number++;
     // }
 }
 // changing from question to question
@@ -173,7 +147,7 @@ function question2() {
     document.querySelector(".quiz_question_number").innerHTML = data.question2[data.number].questionNo;
     document.querySelector(".quiz_question_question").innerHTML = data.question2[data.number].question;
     document.querySelector(".quiz_question_number").src = data.question2[data.number].img;
-    // data.number++;
+    data.number++;
     // }
 }
 
@@ -181,7 +155,7 @@ function question3() {
     document.querySelector(".quiz_question_number").innerHTML = data.question3[data.number].questionNo;
     document.querySelector(".quiz_question_question").innerHTML = data.question3[data.number].question;
     document.querySelector(".quiz_question_number").src = data.question3[data.number].img;
-    // data.number++;
+    data.number++;
 
 }
 
@@ -189,7 +163,7 @@ function question4() {
     document.querySelector(".quiz_question_number").innerHTML = data.question4[data.number].questionNo;
     document.querySelector(".quiz_question_question").innerHTML = data.question4[data.number].question;
     document.querySelector(".quiz_question_number").src = data.question4[data.number].img;
-    // data.number++;
+    data.number++;
 }
 
 
@@ -197,19 +171,5 @@ function question5() {
     document.querySelector(".quiz_question_number").innerHTML = data.question5[data.number].questionNo;
     document.querySelector(".quiz_question_question").innerHTML = data.question5[data.number].question;
     document.querySelector(".quiz_question_number").src = data.question5[data.number].img;
-    // data.number++;
-}
-
-
-function answer(clicked) {
-    if(clicked == "induc")
-    alert(clicked);
-}
-
-
-
-function chkanswer(){
-    if (answering == 0){
-        
-    }
+    data.number++;
 }

@@ -102,9 +102,8 @@ function next1() {
     document.querySelector(".quiz_answer").style.display = "none";
     // next();
 }
-
 var counter = 0;
-var aswr;
+var fuck = 0;
 
 function next() {
 
@@ -117,8 +116,6 @@ function next() {
             data.number = 0;
             document.querySelector(".quiz_question").style.display = "none";
             document.querySelector(".quiz_answer").style.display = "flex";
-        
-
         }
         question2();
     }
@@ -198,18 +195,4 @@ function question5() {
     document.querySelector(".quiz_question_question").innerHTML = data.question5[data.number].question;
     document.querySelector(".quiz_question_number").src = data.question5[data.number].img;
     // data.number++;
-}
-
-
-function answer(clicked) {
-    if(clicked == "induc")
-    alert(clicked);
-}
-
-
-
-function chkanswer(){
-    if (answering == 0){
-        
-    }
 }

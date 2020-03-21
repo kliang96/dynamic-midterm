@@ -14,15 +14,14 @@ var data = {
             questionNo: "Question 1",
             question: "This must mean all his team mates are also dead",
             img: "img/dead.jpg",
-        }
-    ],
+        }],
 
     question2: [{
             questionNo: "Question 2",
             question: "Ninja is my favorite Fortnite streamer",
             img: "img/ninja.jpg",
         },
-        {
+ {
             questionNo: "Question 2",
             question: "Ninja has the most subs of any Fortnite player",
             img: "img/ninja-diamond-play.jpg",
@@ -31,8 +30,7 @@ var data = {
             questionNo: "Question 2",
             question: "This must mean Ninja is the best at Fortnite",
             img: "img/ninja-victory-royale.jpg",
-        }
-    ],
+        }],
 
     question3: [{
             questionNo: "Question 3",
@@ -48,8 +46,7 @@ var data = {
             questionNo: "Question 3",
             question: "This must mean all players are damaged by the storm.",
             img: "img/question3pic3.jpeg",
-        }
-    ],
+        }],
 
     question4: [{
             questionNo: "Question 4",
@@ -65,8 +62,7 @@ var data = {
             questionNo: "Question 4",
             question: "Tomato Town must be the only area with loot.",
             img: "img/question4pic3.jpeg",
-        }
-    ],
+        }],
 
     question5: [{
             questionNo: "Question 5",
@@ -82,8 +78,7 @@ var data = {
             questionNo: "Question 5",
             question: "There must’ve been a fight here.",
             img: "img/question5pic3.jpeg",
-        }
-    ],
+        }],
 }
 
 
@@ -97,64 +92,37 @@ function getStarted() {
 
 }
 
-function next1() {
-    document.querySelector(".quiz_question").style.display = "flex";
-    document.querySelector(".quiz_answer").style.display = "none";
-    // next();
-}
-
 var counter = 0;
-var aswr;
 
 function next() {
-
-    console.log(data.number, "data.number");
-    if (counter <= 2) {
+    if (counter <= 3) {
         question1();
     }
-    if (counter >= 3 && counter <= 5) {
-        if (data.number == 3) {
+    if (counter >= 4 && counter <7) {
+        if (counter % 4 == 0) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
-        
-
         }
         question2();
     }
-    if (counter >= 6 && counter <= 8) {
-        if (data.number == 3) {
+    if (counter >= 8 && counter < 11) {
+        if (counter % 4 == 0) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question3();
     }
-    if (counter >= 9 && counter <= 11) {
-        if (data.number == 3) {
+    if (counter >= 12 && counter < 15) {
+        if (counter % 4 == 0) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question4();
     }
-    if (counter >= 12 && counter <= 14) {
-        if (data.number == 3) {
+    if (counter >= 16 && counter < 19) {
+        if (counter % 4 == 0) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question5();
-
     }
-    if (counter == 15) {
-        document.querySelector(".quiz_question").style.display = "none";
-        document.querySelector(".quiz_answer").style.display = "flex";
-    }
-
-    console.log(counter, "counter");
     counter++;
-    data.number++;
 }
 
 
@@ -164,7 +132,7 @@ function question1() {
     document.querySelector(".quiz_question_number").innerHTML = data.question1[data.number].questionNo;
     document.querySelector(".quiz_question_question").innerHTML = data.question1[data.number].question;
     document.querySelector(".quiz_question_number").src = data.question1[data.number].img;
-    // data.number++;
+    data.number++;
     // }
 }
 // changing from question to question
@@ -173,43 +141,33 @@ function question2() {
     document.querySelector(".quiz_question_number").innerHTML = data.question2[data.number].questionNo;
     document.querySelector(".quiz_question_question").innerHTML = data.question2[data.number].question;
     document.querySelector(".quiz_question_number").src = data.question2[data.number].img;
-    // data.number++;
+    data.number++;
     // }
 }
 
 function question3() {
-    document.querySelector(".quiz_question_number").innerHTML = data.question3[data.number].questionNo;
-    document.querySelector(".quiz_question_question").innerHTML = data.question3[data.number].question;
-    document.querySelector(".quiz_question_number").src = data.question3[data.number].img;
-    // data.number++;
-
+    if (data.number < 4) {
+        document.querySelector(".quiz_question_number").innerHTML = data.question3[data.number].questionNo;
+        document.querySelector(".quiz_question_question").innerHTML = data.question3[data.number].question;
+        document.querySelector(".quiz_question_number").src = data.question3[data.number].img;
+        data.number++;
+    }
 }
 
 function question4() {
-    document.querySelector(".quiz_question_number").innerHTML = data.question4[data.number].questionNo;
-    document.querySelector(".quiz_question_question").innerHTML = data.question4[data.number].question;
-    document.querySelector(".quiz_question_number").src = data.question4[data.number].img;
-    // data.number++;
+    if (data.number < 4) {
+        document.querySelector(".quiz_question_number").innerHTML = data.question4[data.number].questionNo;
+        document.querySelector(".quiz_question_question").innerHTML = data.question4[data.number].question;
+        document.querySelector(".quiz_question_number").src = data.question4[data.number].img;
+        data.number++;
+    }
 }
-
 
 function question5() {
-    document.querySelector(".quiz_question_number").innerHTML = data.question5[data.number].questionNo;
-    document.querySelector(".quiz_question_question").innerHTML = data.question5[data.number].question;
-    document.querySelector(".quiz_question_number").src = data.question5[data.number].img;
-    // data.number++;
-}
-
-
-function answer(clicked) {
-    if(clicked == "induc")
-    alert(clicked);
-}
-
-
-
-function chkanswer(){
-    if (answering == 0){
-        
+    if (data.number < 4) {
+        document.querySelector(".quiz_question_number").innerHTML = data.question5[data.number].questionNo;
+        document.querySelector(".quiz_question_question").innerHTML = data.question5[data.number].question;
+        document.querySelector(".quiz_question_number").src = data.question5[data.number].img;
+        data.number++;
     }
 }
