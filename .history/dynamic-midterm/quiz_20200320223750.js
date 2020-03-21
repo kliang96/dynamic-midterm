@@ -102,8 +102,8 @@ function next1() {
     document.querySelector(".quiz_answer").style.display = "none";
     // next();
 }
-
 var counter = 0;
+var fuck = 0;
 
 function next() {
 
@@ -196,5 +196,3 @@ function question5() {
     document.querySelector(".quiz_question_number").src = data.question5[data.number].img;
     // data.number++;
 }
-
-

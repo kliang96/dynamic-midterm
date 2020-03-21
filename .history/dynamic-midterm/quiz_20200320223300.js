@@ -97,12 +97,11 @@ function getStarted() {
 
 }
 
-function next1() {
+function next1(){
     document.querySelector(".quiz_question").style.display = "flex";
     document.querySelector(".quiz_answer").style.display = "none";
-    // next();
+    next();
 }
-
 var counter = 0;
 
 function next() {
@@ -122,34 +121,22 @@ function next() {
     if (counter >= 6 && counter <= 8) {
         if (data.number == 3) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question3();
     }
     if (counter >= 9 && counter <= 11) {
         if (data.number == 3) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question4();
     }
     if (counter >= 12 && counter <= 14) {
         if (data.number == 3) {
             data.number = 0;
-            document.querySelector(".quiz_question").style.display = "none";
-            document.querySelector(".quiz_answer").style.display = "flex";
         }
         question5();
-
     }
-    if (counter == 15) {
-        document.querySelector(".quiz_question").style.display = "none";
-        document.querySelector(".quiz_answer").style.display = "flex";
-    }
-
-    console.log(counter, "counter");
+    console.log(counter,"counter");
     counter++;
     data.number++;
 }
@@ -196,5 +183,3 @@ function question5() {
     document.querySelector(".quiz_question_number").src = data.question5[data.number].img;
     // data.number++;
 }
-
-

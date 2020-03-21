@@ -97,12 +97,11 @@ function getStarted() {
 
 }
 
-function next1() {
+function next1(){
     document.querySelector(".quiz_question").style.display = "flex";
     document.querySelector(".quiz_answer").style.display = "none";
     // next();
 }
-
 var counter = 0;
 
 function next() {
@@ -142,14 +141,8 @@ function next() {
             document.querySelector(".quiz_answer").style.display = "flex";
         }
         question5();
-
     }
-    if (counter == 15) {
-        document.querySelector(".quiz_question").style.display = "none";
-        document.querySelector(".quiz_answer").style.display = "flex";
-    }
-
-    console.log(counter, "counter");
+    console.log(counter,"counter");
     counter++;
     data.number++;
 }
@@ -196,5 +189,3 @@ function question5() {
     document.querySelector(".quiz_question_number").src = data.question5[data.number].img;
     // data.number++;
 }
-
-
