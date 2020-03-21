@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Burbank;
+    src: url(fonts/Burbank.ttf);
+}
+
+body {
+    font-family: Burbank;
+    font-size: 24pt;
+}
+
+h1 {
+    font-size: 48pt;
+}
+
+.note {
+    font-size: 18pt;
+}
+
+.quiz_main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quiz_tutorial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    font-family: Burbank;
+    font-size: 14pt;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.quiz_question {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.quiz_question_picture {
+    width: 55vw;
+    height: 25vw;
+    margin-bottom: 25px;
+    object-fit: contain;
+}
+
+.quiz_answer {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.quiz_answer button {
+    height: 100px;
+    width: 300px;
+    font-size: 32pt;
+}
+
+.quiz_answer button {
+    height: 100px;
+    width: 300px;
+    font-size: 32pt;
+}
+
+.right {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrong {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+.answer_picture {
+    width: 55vw;
+    height: 20vw;
+    margin-bottom: 25px;
+    object-fit: contain;
+}
+
+.quiz_progress {
+    width: 98vw;
+    height: 2.5vw;
+    background-color: lightgray;
+    display: flex;
+    position: relative;
+    top: -5.5vw;
+    border-radius: 10px;
+}
+
+.quiz_progress_percent {
+    height: 2.5vw;
+    width: 0vw;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+}

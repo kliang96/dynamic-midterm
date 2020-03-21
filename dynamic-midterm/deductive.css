@@ -1,13 +1,13 @@
 @font-face {
     font-family: Burbank;
     src: url(fonts/Burbank.ttf);
-  }
+}
 
-  body{
+body {
     font-family: Burbank;
-  }
-  
-  .deductive_body{
+}
+
+.deductive_body {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -16,34 +16,38 @@
     flex-direction: column;
 }
 
-.deductive_image{
-    width:55vw;
-    height:25vw;
+.deductive_image {
+    width: 55vw;
+    height: 25vw;
     margin-bottom: 25px;
-    object-fit:contain;
+    object-fit: contain;
 }
 
-.deductive_bottom{
-    width:60vw;
-    display:flex;
+.deductive_bottom {
+    width: 60vw;
+    display: flex;
     align-items: center;
     flex-direction: row;
-    position:relative;
+    position: relative;
     font-size: 32pt;
 }
 
-.next_button{
-    position:absolute;
+.next_button {
+    position: absolute;
     width: 150px;
     height: 50px;
-    background-color:green;
-    border-radius:5px;
-    right:0;
+    background-color: green;
+    border-radius: 5px;
+    right: 0;
     font-family: Burbank;
     font-size: 24pt;
 }
 
-.deductive_result{
-    display: none;
+.next_button:hover {
+    background-color: darkgrey;
+    cursor: pointer;
 }
 
+.deductive_result {
+    display: none;
+}
