@@ -28,18 +28,18 @@ var data = {
             img: "img/johnwick.gif",
         },
         {
-            questionNo: "Qhehexd",
-            question: "Tfuckmeeeeee1 pt1",
+            questionNo: "Question 1",
+            question: "This is question 1 pt1",
             img: "img/ps4.jpg",
         },
         {
-            questionNo: "Qhehexd",
-            question: "Tfuckmeeeeee1 pt2",
+            questionNo: "Question 1",
+            question: "This is question 1 pt2",
             img: "img/fortnitePS4.jpeg",
         },
         {
-            questionNo: "Qhehexd",
-            question: "Tfuckmeeeeee1 pt3",
+            questionNo: "Question 1",
+            question: "This is question 1 pt3",
             img: "img/fortnitePS4.jpeg",
         }
     ],
@@ -111,69 +111,25 @@ var data = {
     ],
 }
 
-var questionnum = ["data.question1[data.number].quesitonNo", "data.question1[data.number].question", "question3", "question4", "question5"];
+var questionnum = ["question1", "question2", "question3", "question4", "question5"];
 var count = 1;
 
 // changing initial state of quiz 
 function getStarted() {
     document.querySelector(".quiz_tutorial").style.display = "none";
     document.querySelector(".quiz_question").style.display = "flex";
-    next();
+    nextQuestion();
 }
-
-var counter = 0;
-
-function next() {
-  
-       question1();
-    //    counter++;
-   
-    console.log(counter);
-}
-
 
 // changing from question to question
-function question1() {
-    if (data.number < 4) {
-        document.querySelector(".quiz_question_number").innerHTML = data.question1[data.number].questionNo;
-        document.querySelector(".quiz_question_question").innerHTML = data.question1[data.number].question;
-        document.querySelector(".quiz_question_number").src = data.question1[data.number].img;
-        data.number++;
-    }
-}
-// changing from question to question
-function question2() {
-    if (data.number < 4) {
-        document.querySelector(".quiz_question_number").innerHTML = data.question2[data.number].questionNo;
-        document.querySelector(".quiz_question_question").innerHTML = data.question2[data.number].question;
-        document.querySelector(".quiz_question_number").src = data.question2[data.number].img;
-        data.number++;
-    }
-}
+function nextQuestion() {
+    // if(data.number % 3 == 0){
 
-function question3() {
-    if (data.number < 4) {
-        document.querySelector(".quiz_question_number").innerHTML = data.question3[data.number].questionNo;
-        document.querySelector(".quiz_question_question").innerHTML = data.question3[data.number].question;
-        document.querySelector(".quiz_question_number").src = data.question3[data.number].img;
-        data.number++;
-    }
+    // } else {
+    document.querySelector(".quiz_question_number").innerHTML = data.question+"1"+[data.number].questionNo;
+    document.querySelector(".quiz_question_question").innerHTML = `data.question${count}`[data.number].question;
+    document.querySelector(".quiz_question_number").src = data.question + "1" + [data.number].img;
+    data.number++;
 }
+// }
 
-function question4() {
-    if (data.number < 4) {
-        document.querySelector(".quiz_question_number").innerHTML = data.question4[data.number].questionNo;
-        document.querySelector(".quiz_question_question").innerHTML = data.question4[data.number].question;
-        document.querySelector(".quiz_question_number").src = data.question4[data.number].img;
-        data.number++;
-    }
-}
-
-function question5() {
-    if (data.number < 4) {
-        document.querySelector(".quiz_question_number").innerHTML = data.question5[data.number].questionNo;
-        document.querySelector(".quiz_question_question").innerHTML = data.question5[data.number].question;
-        document.querySelector(".quiz_question_number").src = data.question5[data.number].img;
-        data.number++;
-    }
-}

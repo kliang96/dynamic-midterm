@@ -118,16 +118,20 @@ var count = 1;
 function getStarted() {
     document.querySelector(".quiz_tutorial").style.display = "none";
     document.querySelector(".quiz_question").style.display = "flex";
-    next();
+    question1();
 }
 
 var counter = 0;
 
 function next() {
-  
-       question1();
-    //    counter++;
-   
+    if (count < 3) {
+        question1();
+        question2();
+    } else if (count >= 6) {
+        question2();
+        // counter++;
+    }
+    counter++;
     console.log(counter);
 }
 

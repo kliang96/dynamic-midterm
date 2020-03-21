@@ -118,7 +118,7 @@ var count = 1;
 function getStarted() {
     document.querySelector(".quiz_tutorial").style.display = "none";
     document.querySelector(".quiz_question").style.display = "flex";
-    next();
+    question1();
 }
 
 var counter = 0;
