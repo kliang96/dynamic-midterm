@@ -21,7 +21,7 @@
                 -At the end of each scenario you have to choose whether it's Inductive or Deductive reasoning </br>
                 -If you get all five correct you win some treats!!!! </br> </br>
                 <div class="note">Note: below is a progress bar which shows you your progress</div>
-                <button>I understand</button>
+                <button onclick="getStarted()">I understand</button>
             </div>
         </div>
 
@@ -30,7 +30,7 @@
             <div class="quiz_question_number">question number</div>
             <img src="https://placekitten.com/400/400" class="quiz_question_picture">
             <div class="quiz_question_question">question</div>
-            <button class="quiz_question_next">Next</button>
+            <button class="quiz_question_next" onclick="nextQuestion()">Next</button>
         </div>
 
         <!-- answer screen begins here -->
@@ -45,7 +45,7 @@
         <!-- right -->
         <div class="right">
             <h1>Correct!</h1>
-            <div class="score"> you're at 1/5, keep it going!</div>
+            <div class="score"> you're at <span id="mark">1/5</span>, keep it going!</div>
             <img src="img/correct.gif" class="answer_picture">
             <button>Next question</button>
         </div>
@@ -53,9 +53,9 @@
         <!-- wrong -->
         <div class="wrong">
             <h1>Incorrect</h1>
-            <div class="score"> you got 0/5 better luck next time</div>
+            <div class="score"> you got <span id="mark">1/5</span> better luck next time</div>
             <img src="img/wrong.gif" class="answer_picture">
-            <button>Try Again</button>
+            <button>Next question</button>
         </div>
 
         <!-- progress bar for the quiz begins here -->
@@ -63,6 +63,7 @@
             <div class="quiz_progress_percent"></div>
         </div>
     </div>
+    <script src="quiz.js"></script>
 </body>
 
 </html>
