@@ -117,7 +117,9 @@ function next() {
             data.number = 0;
             document.querySelector(".quiz_question").style.display = "none";
             document.querySelector(".quiz_answer").style.display = "flex";
-        
+            function answer(clicked) {
+                alert( clicked);
+            }
 
         }
         question2();
@@ -201,10 +203,7 @@ function question5() {
 }
 
 
-function answer(clicked) {
-    if(clicked == "induc")
-    alert(clicked);
-}
+
 
 
 

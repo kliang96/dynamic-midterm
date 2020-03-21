@@ -104,7 +104,6 @@ function next1() {
 }
 
 var counter = 0;
-var aswr;
 
 function next() {
 
@@ -117,7 +116,9 @@ function next() {
             data.number = 0;
             document.querySelector(".quiz_question").style.display = "none";
             document.querySelector(".quiz_answer").style.display = "flex";
-        
+            if(answer() == "induc"){
+                console.log("ffffffff");
+            }
 
         }
         question2();
@@ -201,15 +202,6 @@ function question5() {
 }
 
 
-function answer(clicked) {
-    if(clicked == "induc")
-    alert(clicked);
-}
-
-
-
-function chkanswer(){
-    if (answering == 0){
-        
-    }
+function answer(clicked) { 
+    return toString(clicked);
 }

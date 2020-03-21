@@ -117,7 +117,12 @@ function next() {
             data.number = 0;
             document.querySelector(".quiz_question").style.display = "none";
             document.querySelector(".quiz_answer").style.display = "flex";
-        
+            // if(toString(answer()) == "induc"){
+            //     console.log("ffffffff");
+            // }
+           alert(answer());
+            }
+            //  document.write(answer());
 
         }
         question2();
@@ -202,8 +207,7 @@ function question5() {
 
 
 function answer(clicked) {
-    if(clicked == "induc")
-    alert(clicked);
+    return clicked;
 }
 
 

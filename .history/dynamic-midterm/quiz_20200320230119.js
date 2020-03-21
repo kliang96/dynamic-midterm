@@ -86,7 +86,7 @@ var data = {
     ],
 }
 
-
+var quizanswer;
 var questionnum = ["data.question1[data.number].quesitonNo", "data.question1[data.number].question", "question3", "question4", "question5"];
 var count = 1;
 
@@ -104,7 +104,6 @@ function next1() {
 }
 
 var counter = 0;
-var aswr;
 
 function next() {
 
@@ -117,7 +116,9 @@ function next() {
             data.number = 0;
             document.querySelector(".quiz_question").style.display = "none";
             document.querySelector(".quiz_answer").style.display = "flex";
-        
+            if(quizanswer == "induc"){
+                console.log("ffffffff");
+            }
 
         }
         question2();
@@ -201,15 +202,6 @@ function question5() {
 }
 
 
-function answer(clicked) {
-    if(clicked == "induc")
-    alert(clicked);
-}
-
-
-
-function chkanswer(){
-    if (answering == 0){
-        
-    }
+function answer(clicked) { 
+    quizanswer = toString(clicked);
 }

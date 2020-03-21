@@ -202,8 +202,7 @@ function question5() {
 
 
 function answer(clicked) {
-    if(clicked == "induc")
-    alert(clicked);
+    alert( clicked);
 }
 
 
