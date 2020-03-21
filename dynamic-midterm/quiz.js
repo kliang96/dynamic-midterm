@@ -30,41 +30,41 @@ var data = {
         {
             questionNo: "Question 2",
             question: "This must mean Ninja is the best at Fortnite",
-            img: "img/ninja-victory-royale.jpg",
+            img: "img/ninja-victory-royale.png",
         }
     ],
 
     question3: [{
             questionNo: "Question 3",
             question: "The “Storm” in Fortnite causes damage.",
-            img: "img/question3pic1.jpeg",
+            img: "img/question3pic1.jpg",
         },
         {
             questionNo: "Question 3",
             question: "I am damaged by the Storm.",
-            img: "img/question3pic2.jpeg",
+            img: "img/question3pic2.jpg",
         },
         {
             questionNo: "Question 3",
             question: "This must mean all players are damaged by the storm.",
-            img: "img/question3pic3.jpeg",
+            img: "img/question3pic3.jpg",
         }
     ],
 
     question4: [{
             questionNo: "Question 4",
             question: "I landed in Tomato Town",
-            img: "img/question4pic1.jpeg",
+            img: "img/question4pic1.png",
         },
         {
             questionNo: "Question 4",
             question: "Tomato Town houses different loot.",
-            img: "img/question4pic2.jpeg",
+            img: "img/question4pic2.png",
         },
         {
             questionNo: "Question 4",
             question: "Tomato Town must be the only area with loot.",
-            img: "img/question4pic3.jpeg",
+            img: "img/question4pic3.jpg",
         }
     ],
 
@@ -76,12 +76,12 @@ var data = {
         {
             questionNo: "Question 5",
             question: "Players usually build when they fight eachother.",
-            img: "img/question5pic2.jpeg",
+            img: "img/question5pic2.jpg",
         },
         {
             questionNo: "Question 5",
             question: "There must’ve been a fight here.",
-            img: "img/question5pic3.jpeg",
+            img: "img/question5pic3.jpg",
         }
     ],
 }
