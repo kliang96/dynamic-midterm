@@ -1,5 +1,7 @@
 var data = {
     number: 0,
+    points: 0,
+    wrong: "Nice try, right now you are at:",
     question1: [{
             questionNo: "Question 1",
             question: "I knocked down a player in Fortnite",
@@ -128,7 +130,6 @@ function next1() {
 }
 
 var counter = 0;
-var aswr;
 
 function next() {
     // console.log(data.number, "data.number");
@@ -140,8 +141,6 @@ function next() {
             data.number = 0;
             document.querySelector(".quiz_question").style.display = "none";
             document.querySelector(".quiz_answer").style.display = "flex";
-
-
         }
         question2();
     }
@@ -170,11 +169,18 @@ function next() {
         question5();
 
     }
-    if (counter >= 15) {
+    if (counter >= 15 && counter < 16) {
+        data.number = 0;
         document.querySelector(".quiz_question").style.display = "none";
         document.querySelector(".quiz_answer").style.display = "flex";
     }
-
+    if (counter >= 16) {
+        document.querySelector(".right").style.display = "flex";
+        document.querySelector(".quiz_answer").style.display = "none";
+        document.querySelector(".quiz_question").style.display = "none";
+        document.querySelector("#done").style.display = "none";
+        document.querySelector(".point").innerHTML = data.points;
+    }
     console.log(counter, "counter");
     counter++;
     data.number++;
@@ -223,45 +229,54 @@ function question5() {
     // data.number++;
 }
 
-var points = 0;
+// var points = 0;
 
 function answer(clicked) {
-    if (clicked == data.question1[data.number].answer) {
+    if (clicked == data.question1[data.number].answer && counter === 4) {
         document.querySelector(".right").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
-        points++;
-        document.querySelector("#mark").innerHTML = points;
-    } else if (clicked == data.question2[data.number].answer) {
+        data.points++;
+        document.querySelector(".mark").innerHTML = data.points;
+        console.log("one");
+    } else if (clicked == data.question2[data.number].answer && counter === 7) {
         document.querySelector(".right").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
-        points++;
-        document.querySelector("#mark").innerHTML = points;
-    } else if (clicked == data.question3[data.number].answer) {
+        data.points++;
+        document.querySelector(".mark").innerHTML = data.points;
+        console.log("two");
+    } else if (clicked == data.question3[data.number].answer && counter == 10) {
         document.querySelector(".right").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
-        points++;
-        document.querySelector("#mark").innerHTML = points;
-    } else if (clicked == data.question4[data.number].answer) {
+        data.points++;
+        document.querySelector("#mark").innerHTML = data.points;
+    } else if (clicked == data.question4[data.number].answer && counter == 13) {
         document.querySelector(".right").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
-        points++;
-        document.querySelector("#mark").innerHTML = points;
-    } else if (clicked == data.question5[data.number].answer) {
-        document.querySelector(".right").style.display = "flex";
+        data.points++;
+        document.querySelector(".mark").innerHTML = data.points;
+    } else if (clicked == data.question5[data.number].answer && counter == 16) {
+        data.points++;
+        document.querySelector(".score").innerHTML = "Thank you for playing! Your final score is " + data.points + "/5! Good job";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
-        points++;
-        document.querySelector("#mark").innerHTML = points;
+        document.querySelector(".right").style.display = "flex";
+    // } else if (clicked != data.question5[data.number].answer && counter >= 16) {
+    //     document.querySelector(".right").style.display = "flex";
+    //     document.querySelector(".quiz_answer").style.display = "none";
+    //     document.querySelector(".quiz_question").style.display = "none";
+    //     document.querySelector(".mark").innerHTML = data.points;
     } else {
+        document.querySelector(".scores").innerHTML = "Nice try, you are now at " + data.points + "/5 Keep it up!";
         document.querySelector(".wrong").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
+        console.log("wrong");
     }
-    console.log(points, "points");
+    console.log(data.points, "points");
 }
 
 function changedisp() {
