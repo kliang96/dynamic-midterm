@@ -193,8 +193,8 @@ function question1() {
     document.querySelector(".quiz_question_number").innerHTML = data.question1[data.number].questionNo;
     document.querySelector(".quiz_question_question").innerHTML = data.question1[data.number].question;
     document.querySelector(".quiz_question_picture").src = data.question1[data.number].img;
-    // data.number++;
-    // }
+        // data.number++;
+        // }
 }
 // changing from question to question
 function question2() {
@@ -236,6 +236,7 @@ function answer(clicked) {
         document.querySelector(".right").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
+        document.querySelector(".quiz_progress_percent").style.width = "20%";
         data.points++;
         document.querySelector(".mark").innerHTML = data.points;
         console.log("one");
@@ -243,6 +244,7 @@ function answer(clicked) {
         document.querySelector(".right").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
+        document.querySelector(".quiz_progress_percent").style.width = "40%";
         data.points++;
         document.querySelector(".mark").innerHTML = data.points;
         console.log("two");
@@ -250,12 +252,14 @@ function answer(clicked) {
         document.querySelector(".right").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
+        document.querySelector(".quiz_progress_percent").style.width = "60%";
         data.points++;
         document.querySelector("#mark").innerHTML = data.points;
     } else if (clicked == data.question4[data.number].answer && counter == 13) {
         document.querySelector(".right").style.display = "flex";
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
+        document.querySelector(".quiz_progress_percent").style.width = "80%";
         data.points++;
         document.querySelector(".mark").innerHTML = data.points;
     } else if (clicked == data.question5[data.number].answer && counter == 16) {
@@ -264,11 +268,12 @@ function answer(clicked) {
         document.querySelector(".quiz_answer").style.display = "none";
         document.querySelector(".quiz_question").style.display = "none";
         document.querySelector(".right").style.display = "flex";
-    // } else if (clicked != data.question5[data.number].answer && counter >= 16) {
-    //     document.querySelector(".right").style.display = "flex";
-    //     document.querySelector(".quiz_answer").style.display = "none";
-    //     document.querySelector(".quiz_question").style.display = "none";
-    //     document.querySelector(".mark").innerHTML = data.points;
+        document.querySelector(".quiz_progress_percent").style.width = "100%";
+        // } else if (clicked != data.question5[data.number].answer && counter >= 16) {
+        //     document.querySelector(".right").style.display = "flex";
+        //     document.querySelector(".quiz_answer").style.display = "none";
+        //     document.querySelector(".quiz_question").style.display = "none";
+        //     document.querySelector(".mark").innerHTML = data.points;
     } else {
         document.querySelector(".scores").innerHTML = "Nice try, you are now at " + data.points + "/5 Keep it up!";
         document.querySelector(".wrong").style.display = "flex";
